@@ -9,7 +9,7 @@ Internet Movie Database (IMDb).
 
 This cleaned copy is used in order to be able to public this dataset
 as part of [Yet Another LOD Cloud
-(YALC)](https://github.com/Triply/YALC):
+(YALC)](https://github.com/TriplyDB/YALC):
 https://triplydb.com/Triply/linkedmdb
 
 ## Why did we clean this dataset?
