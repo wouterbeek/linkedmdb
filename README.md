@@ -14,8 +14,9 @@ https://triplydb.com/Triply/linkedmdb
 
 ## Why did we clean this dataset?
 
-Exisiting versions of this dataset cannot be uploaded to the LOD Cloud
-because they contain syntax errors:
+Exisiting versions of this dataset cannot be uploaded in
+[YALC](https://github.com/TriplyDB/YALC) because they contain syntax
+errors:
 
   - https://github.com/TriplyDB/YALC/blob/master/datasets/errors/README.md#unescaped-double-quote
   - https://github.com/TriplyDB/YALC/blob/master/datasets/errors/README.md#unescaped-space-characters

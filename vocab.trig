@@ -1,0 +1,165 @@
+prefix dataset: <https://triplydb.com/Triply/linkedmdb/>
+prefix graph: <https://triplydb.com/Triply/linkedmdb/graphs/>
+prefix owl: <http://www.w3.org/2002/07/owl#>
+prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+prefix sdo: <http://schema.org/>
+prefix vocab: <https://triplydb.com/Triply/linkedmdb/vocab/>
+prefix void: <http://rdfs.org/ns/void#>
+
+dataset:
+  a void:Dataset;
+  void:subset
+    graph:data,
+    graph:vocab.
+
+graph:data
+  rdfs:label "data graph"@en.
+
+graph:vocab
+  rdfs:label "vocab graph"@en.
+
+graph:vocab {
+  vocab:Actor
+    rdfs:label "actor"@en;
+    rdfs:subClassOf sdo:Person.
+
+  vocab:ArtDirector
+    rdfs:label "art director"@en;
+    rdfs:subClassOf sdo:Person.
+
+  vocab:CastingDirector
+    rdfs:label "casting director"@en;
+    rdfs:subClassOf sdo:Person.
+
+  vocab:Cinematographer
+    rdfs:label "cinematographer"@en;
+    rdfs:subClassOf sdo:Person.
+
+  vocab:ContentRating
+    rdfs:label "content rating"@en;
+    rdfs:subClassOf owl:Thing.
+
+  vocab:ContentRatingSystem
+    rdfs:label "content rating system"@en;
+    rdfs:subClassOf owl:Thing.
+
+  vocab:CostumeDesigner
+    rdfs:label "costume designer"@en;
+    rdfs:subClassOf sdo:Person.
+
+  vocab:Country
+    rdfs:label "country"@en;
+    rdfs:subClassOf sdo:Country.
+
+  vocab:Director
+    rdfs:label "director"@en;
+    rdfs:subClassOf sdo:Person.
+
+  vocab:DubbingPerformance
+    rdfs:label "dubbing performance"@en;
+    rdfs:subClassOf owl:Thing.
+
+  vocab:Editor
+    rdfs:label "editor"@en;
+    rdfs:subClassOf sdo:Person.
+
+  vocab:Film
+    rdfs:label "film"@en;
+    rdfs:subClassOf sdo:Movie.
+
+  vocab:FilmAwardCeremony
+    rdfs:label "film award ceremony"@en;
+    rdfs:subClassOf owl:Thing.
+
+  vocab:FilmCharacter
+    rdfs:label "film character"@en;
+    rdfs:subClassOf owl:Thing.
+
+  vocab:FilmCollection
+    rdfs:label "film collection"@en;
+    rdfs:subClassOf owl:Thing.
+
+  vocab:FilmCompany
+    rdfs:label "film company"@en;
+    rdfs:subClassOf sdo:Corporation.
+
+  vocab:FilmCrewGig
+    rdfs:label "film crew gig"@en;
+    rdfs:subClassOf sdo:SocialEvent.
+
+  vocab:FilmCritic
+    rdfs:label "film critic"@en;
+    rdfs:subClassOf sdo:Person.
+
+  vocab:FilmCut
+    rdfs:label "film cut"@en;
+    rdfs:subClassOf owl:Thing.
+
+  vocab:FilmDistributionMedium
+    rdfs:label "film distribution"@en;
+    rdfs:subClassOf owl:Thing.
+
+  vocab:FilmDistributor
+    rdfs:label "film distributor"@en;
+    rdfs:subClassOf sdo:Person.
+
+  vocab:FilmGenre
+    rdfs:label "film genre"@en;
+    rdfs:subClassOf owl:Thing.
+
+  vocab:FilmJob
+    rdfs:label "film job"@en;
+    rdfs:subClassOf owl:Thing.
+
+  vocab:FilmLocation
+    rdfs:label "film location"@en;
+    rdfs:subClassOf sdo:Place.
+
+  vocab:FilmSeries
+    rdfs:label "film series"@en;
+    rdfs:subClassOf owl:Thing.
+
+  vocab:FilmSetDesigner
+    rdfs:label "film set designer"@en;
+    rdfs:subClassOf sdo:Person.
+
+  vocab:FilmSubject
+    rdfs:label "film subject"@en;
+    rdfs:subClassOf owl:Thing.
+
+  vocab:FilmTheorist
+    rdfs:label "film theorist"@en;
+    rdfs:subClassOf sdo:Person.
+
+  vocab:Interlink
+    rdfs:label "interlink"@en;
+    rdfs:subClassOf owl:Thing.
+
+  vocab:MusicContributor
+    rdfs:label "music contributor"@en;
+    rdfs:subClassOf sdo:Person.
+
+  vocab:Performance
+    rdfs:label "performance"@en;
+    rdfs:subClassOf owl:Thing.
+
+  vocab:Person
+    rdfs:label "person"@en;
+    rdfs:subClassOf sdo:Person.
+
+  vocab:PersonalFilmAppearance
+    rdfs:label "personal film appearance"@en;
+    rdfs:subClassOf owl:Thing.
+
+  vocab:Producer
+    rdfs:label "producer"@en;
+    rdfs:subClassOf sdo:Person.
+
+  vocab:ProductionCompany
+    rdfs:label "production company"@en;
+    rdfs:subClassOf sdo:Corporation.
+
+  vocab:Writer
+    rdfs:label "writer"@en;
+    rdfs:subClassOf sdo:Person.
+}
